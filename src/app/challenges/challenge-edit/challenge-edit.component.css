@@ -1,0 +1,9 @@
+/* Add mobile styles for the component here.  */
+
+TextField {
+    width: 60%;
+}
+
+Button {
+    width: 33%;
+}
