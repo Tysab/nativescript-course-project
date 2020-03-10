@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
+import { RouterExtensions } from "nativescript-angular/router";
 
 @Component({
     selector: "ns-auth",
@@ -7,11 +7,11 @@ import { Router } from "@angular/router";
     styleUrls: ["./auth.component.css"]
 })
 export class AuthComponent implements OnInit {
-    constructor(private router: Router) {}
+    constructor(private router: RouterExtensions) {}
 
     ngOnInit(): void {}
 
     onSignIn() {
-        this.router.navigate(['/today']);
+        this.router.navigate(["/today"], { clearHistory: true });
     }
 }
