@@ -25,10 +25,10 @@ The following CSS rule changes the font size of all Buttons that have the
 }
 
 .btn {
-  background: purple;
+  background: #800080;
   border-width: 1;
   border-color: purple;
-  color: white;
+  color: #ffffff;
   width: 100%;
   padding: 5 0;
   border-radius: 30%;
