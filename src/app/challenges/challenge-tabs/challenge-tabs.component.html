@@ -3,12 +3,10 @@
   androidSelectedTabHighlightColor="#800080"
   selectedTabTextColor="#818181"
 >
-  <page-router-outlet
-    *tabItem="{ title: 'Today' }"
-    name="today"
-  ></page-router-outlet>
-  <page-router-outlet
-    *tabItem="{ title: 'Current Challenge' }"
-    name="currentChallenge"
-  ></page-router-outlet>
+  <StackLayout *tabItem="{ title: 'Today' }">
+    <page-router-outlet name="today"></page-router-outlet>
+  </StackLayout>
+  <StackLayout *tabItem="{ title: 'Current Challenge' }">
+    <page-router-outlet name="currentChallenge"></page-router-outlet>
+  </StackLayout>
 </TabView>

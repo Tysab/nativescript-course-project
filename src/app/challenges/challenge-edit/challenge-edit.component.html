@@ -1,4 +1,7 @@
-<ns-action-bar title="Edit challenge" [hasMenu]="false"></ns-action-bar>
+<ns-action-bar
+  [title]="isCreating ? 'Replace challenge' : 'Edit challenge'"
+  [hasMenu]="false"
+></ns-action-bar>
 <FlexboxLayout justifyContent="space-between">
   <!-- <TextField
     class="input"
@@ -7,5 +10,4 @@
   ></TextField>
   <Button class="btn" (tap)="onSetChallenge()" text="Add Challenge"></Button> -->
   <Label text="The edit page"></Label>
-
 </FlexboxLayout>
