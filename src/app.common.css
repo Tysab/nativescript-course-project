@@ -1,0 +1,23 @@
+@import "~@nativescript/theme/css/core.css";
+@import "~@nativescript/theme/css/default.css";
+
+TextField {
+  font-size: 18;
+}
+
+.drawer-container {
+  background: linear-gradient(140deg, #2b0c72, #5c3fa0);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20;
+}
+
+.btn {
+  border-width: 1;
+  width: 100%;
+  padding: 5 0;
+  border-color: purple;
+  border-radius: 30%;
+  margin: 5 0;
+}
