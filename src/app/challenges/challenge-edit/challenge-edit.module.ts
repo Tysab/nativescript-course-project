@@ -1,5 +1,5 @@
 import { ChallengeEditComponent } from "./challenge-edit.component";
-import { NgModule } from "@angular/core";
+import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { SharedModule } from "../../shared/shared.module";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
@@ -13,7 +13,6 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
         ]),
         SharedModule
     ],
-    exports: [],
-    providers: []
+    schemas: [NO_ERRORS_SCHEMA]
 })
 export class ChallengeEditModule {}
