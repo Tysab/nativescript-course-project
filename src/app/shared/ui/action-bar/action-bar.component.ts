@@ -1,5 +1,6 @@
 import { Component, Input } from "@angular/core";
-import { isAndroid, Page } from "tns-core-modules/ui/page/page";
+import { isAndroid } from "tns-core-modules/platform";
+import { Page } from 'tns-core-modules/ui/page';
 import { RouterExtensions } from "nativescript-angular/router";
 import { UIService } from "../../ui.service";
 

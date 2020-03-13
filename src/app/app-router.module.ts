@@ -10,7 +10,6 @@ import { ChallengeTabsComponent } from "./challenges/challenge-tabs/challenge-ta
 
 const routes: Routes = [
     { path: "", component: AuthComponent },
-
     {
         path: "challenges",
         children: [
