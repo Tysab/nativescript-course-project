@@ -1,3 +1,4 @@
+import { ChallengeTabsComponent } from './challenges/challenge-tabs/challenge-tabs.component';
 import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { Routes } from "@angular/router";
@@ -19,6 +20,10 @@ const routes: Routes = [
     {
         path: "edit-challenge",
         component: ChallengeEditComponent
+    },
+    {
+        path: "challenges",
+        component: ChallengeTabsComponent
     }
 ];
 
