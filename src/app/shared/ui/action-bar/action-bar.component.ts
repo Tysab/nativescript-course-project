@@ -14,6 +14,7 @@ declare var android: any;
 export class ActionBarComponent {
     @Input() title: string;
     @Input() showBackButton = true;
+    @Input() hasMenu = true;
 
     constructor(private router: RouterExtensions, private page: Page, private uiService: UIService) {}
 
