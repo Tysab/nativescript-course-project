@@ -9,6 +9,6 @@ export class AppComponent {
 
     setCurrentChallenge(value: string) {
         this.activeChallenge = value;
-        console.log('onChallengeInput: ', value);
+        console.log("onChallengeInput: ", value);
     }
 }

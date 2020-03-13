@@ -16,6 +16,10 @@ export class ActionBarComponent {
 
     constructor(private router: RouterExtensions, private page: Page) {}
 
+    get android() {
+        return isAndroid;
+    }
+
     get canGoBack() {
         return this.router.canGoBack() && this.showBackButton;
     }
