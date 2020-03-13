@@ -7,13 +7,7 @@ import { Component, OnInit } from "@angular/core";
     moduleId: module.id
 })
 export class TodayComponent implements OnInit {
-    isHighlighted = false;
-
     constructor() {}
 
     ngOnInit() {}
-
-    onDemo() {
-        this.isHighlighted = !this.isHighlighted;
-    }
 }
