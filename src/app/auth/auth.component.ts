@@ -10,9 +10,9 @@ import { RouterExtensions } from "nativescript-angular/router";
 export class AuthComponent implements OnInit {
     constructor(private router: RouterExtensions) {}
 
-    ngOnInit(): void {}
+    ngOnInit() {}
 
     onSignIn() {
-        this.router.navigate(["/challenges"], { clearHistory: true });
+        this.router.navigate(["/today"], { clearHistory: true });
     }
 }

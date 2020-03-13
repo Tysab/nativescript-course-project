@@ -4,5 +4,10 @@
   [hasMenu]="false"
 ></ns-action-bar>
 <StackLayout>
-  <Button text="Login" class="btn btn-primary" (tap)="onSignIn()"></Button>
+  <Button
+    text="Login"
+    class="btn btn-primary"
+    nsRouterLink="/challenges"
+    [clearHistory]="true"
+  ></Button>
 </StackLayout>

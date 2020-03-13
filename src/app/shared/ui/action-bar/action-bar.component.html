@@ -10,7 +10,11 @@
     icon="res://menu_black"
     (tap)="onToggleMenu()"
   ></NavigationButton>
-  <ActionItem *ngIf="!android && hasMenu" ios.position="left" (tap)="onToggleMenu()">
+  <ActionItem
+    *ngIf="!android && hasMenu"
+    ios.position="left"
+    (tap)="onToggleMenu()"
+  >
     <Label text="MENU"></Label>
   </ActionItem>
   <ng-content></ng-content>

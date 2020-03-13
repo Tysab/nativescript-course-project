@@ -1,5 +1,5 @@
-import { Component, Input } from "@angular/core";
-import { isAndroid } from "tns-core-modules/platform";
+import { Component, Input, OnInit } from '@angular/core';
+import { isAndroid } from "platform";
 import { Page } from "tns-core-modules/ui/page";
 import { RouterExtensions } from "nativescript-angular/router";
 import { UIService } from "../../ui.service";
@@ -12,7 +12,7 @@ declare var android: any;
     styleUrls: ["./action-bar.component.css"],
     moduleId: module.id
 })
-export class ActionBarComponent {
+export class ActionBarComponent implements OnInit {
     @Input() title: string;
     @Input() showBackButton = true;
     @Input() hasMenu = true;
@@ -22,6 +22,8 @@ export class ActionBarComponent {
         private router: RouterExtensions,
         private uiService: UIService
     ) {}
+
+    ngOnInit(){}
 
     get android() {
         return isAndroid;

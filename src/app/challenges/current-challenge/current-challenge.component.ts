@@ -1,5 +1,6 @@
 import { Component, ViewContainerRef } from "@angular/core";
 import { ModalDialogService } from "nativescript-angular/modal-dialog";
+
 import { DayModalComponent } from "../day-modal/day-modal.component";
 import { UIService } from "~/app/shared/ui.service";
 

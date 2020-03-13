@@ -4,18 +4,19 @@ import {
     OnDestroy,
     ViewChild,
     AfterViewInit,
-    ChangeDetectorRef
+    ChangeDetectorRef,
+    ViewContainerRef
 } from "@angular/core";
-import { UIService } from "./shared/ui.service";
 import { Subscription } from "rxjs";
 import { RadSideDrawerComponent } from "nativescript-ui-sidedrawer/angular/side-drawer-directives";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
-import { ViewContainerRef } from '@angular/core';
+
+import { UIService } from "./shared/ui.service";
 
 @Component({
     selector: "ns-app",
-    templateUrl: "./app.component.html",
-    moduleId: module.id
+    moduleId: module.id,
+    templateUrl: "./app.component.html"
 })
 export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     @ViewChild(RadSideDrawerComponent, { static: false })
@@ -42,10 +43,11 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
     ngAfterViewInit() {
         this.drawer = this.drawerComponent.sideDrawer;
+
         this.changeDetectionRef.detectChanges();
     }
 
-    setCurrentChallenge(value: string) {
+    onCurrentChallengeInput(value: string) {
         this.activeChallenge = value;
         console.log("onChallengeInput: ", value);
     }
