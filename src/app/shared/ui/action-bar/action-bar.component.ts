@@ -12,8 +12,17 @@ declare var android: any;
 })
 export class ActionBarComponent {
     @Input() title: string;
+    @Input() showBackButton = true;
 
     constructor(private router: RouterExtensions, private page: Page) {}
+
+    get canGoBack() {
+        return this.router.canGoBack() && this.showBackButton;
+    }
+
+    onGoBack() {
+        this.router.backToPreviousPage();
+    }
 
     onLoadedActionBar() {
         if (isAndroid) {
