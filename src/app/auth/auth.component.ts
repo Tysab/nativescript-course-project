@@ -4,7 +4,8 @@ import { RouterExtensions } from "nativescript-angular/router";
 @Component({
     selector: "ns-auth",
     templateUrl: "./auth.component.html",
-    styleUrls: ["./auth.component.css"]
+    styleUrls: ["./auth.component.css"],
+    moduleId: module.id
 })
 export class AuthComponent implements OnInit {
     constructor(private router: RouterExtensions) {}

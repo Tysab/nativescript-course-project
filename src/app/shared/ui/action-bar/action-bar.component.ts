@@ -1,7 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { isAndroid, Page } from "tns-core-modules/ui/page/page";
 import { RouterExtensions } from "nativescript-angular/router";
-import { UIService } from '../../ui.service';
+import { UIService } from "../../ui.service";
 
 declare var android: any;
 
@@ -16,7 +16,11 @@ export class ActionBarComponent {
     @Input() showBackButton = true;
     @Input() hasMenu = true;
 
-    constructor(private router: RouterExtensions, private page: Page, private uiService: UIService) {}
+    constructor(
+        private page: Page,
+        private router: RouterExtensions,
+        private uiService: UIService
+    ) {}
 
     get android() {
         return isAndroid;
@@ -46,5 +50,4 @@ export class ActionBarComponent {
     onToggleMenu() {
         this.uiService.toggleDrawer();
     }
-
 }

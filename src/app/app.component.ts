@@ -13,7 +13,8 @@ import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 
 @Component({
     selector: "ns-app",
-    templateUrl: "./app.component.html"
+    templateUrl: "./app.component.html",
+    moduleId: module.id
 })
 export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     @ViewChild(RadSideDrawerComponent, { static: false })
@@ -30,7 +31,6 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
     ngOnInit() {
         this.drawerSub = this.uiService.drawerState.subscribe(() => {
-            console.log("Toggle side drawer!");
             if (this.drawer) {
                 this.drawer.toggleDrawerState();
             }

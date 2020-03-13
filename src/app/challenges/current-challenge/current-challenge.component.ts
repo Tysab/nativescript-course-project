@@ -10,7 +10,7 @@ import { RouterExtensions } from "nativescript-angular/router";
 export class CurrentChallengeComponent {
     constructor(private router: RouterExtensions) {}
 
-    onTap() {
+    onEdit() {
         this.router.navigate(["/challenges/edit"], {
             transition: { name: "slideLeft" }
         });
