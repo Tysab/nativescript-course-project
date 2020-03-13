@@ -17,11 +17,16 @@ export class CurrentChallengeComponent {
     ) {}
 
     onChangeStatus() {
-        this.modalDialog.showModal(DayModalComponent, {
-            fullscreen: true,
-            viewContainerRef: this.uiService.getRootVCRef()
-                ? this.uiService.getRootVCRef()
-                : this.vcRef
-        });
+        this.modalDialog
+            .showModal(DayModalComponent, {
+                fullscreen: true,
+                viewContainerRef: this.uiService.getRootVCRef()
+                    ? this.uiService.getRootVCRef()
+                    : this.vcRef,
+                context: { date: new Date() }
+            })
+            .then((action: string) => {
+                console.log(action);
+            });
     }
 }
