@@ -1,5 +1,5 @@
-// @import "~@nativescript/theme/css/core.css";
-// @import "~@nativescript/theme/css/default.css";
+// @import "~@nativescript/theme/css/core";
+// @import "~@nativescript/theme/css/default";
 @import "~nativescript-theme-core/scss/light";
 
 $primary: #7c015d;
@@ -8,7 +8,7 @@ $disabled: #ccc;
 
 $btn-color: $primary;
 
-@import "~nativescript-theme-core/scss/index";
+// @import "@nativescript/theme/scss/_index";
 
 // TextField {
 //   font-size: 18;
