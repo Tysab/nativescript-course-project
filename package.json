@@ -35,7 +35,7 @@
     "@ngtools/webpack": "~8.2.0",
     "nativescript-dev-sass": "^1.7.0",
     "nativescript-dev-webpack": "~1.5.0",
-    "node-sass": "4.12.0",
+    "node-sass": "4.13.1",
     "typescript": "~3.5.3"
   },
   "gitHead": "d8bdf0799a219051f28f8abd7c258d2bf2fce6e1",
